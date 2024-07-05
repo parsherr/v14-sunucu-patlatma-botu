@@ -26,7 +26,6 @@ Bu projeden yararlandıysanız emeğim adına projeye star atarsanız sevinirim.
 
 ## Botun İntentlerini Açmayı Unutma!
 * [Açmak İçin Tıkla](https://discord.com/developers/applications)
-<img src="https://cdn.discordapp.com/attachments/818953120452575322/851116463166849054/3P4KKB.png"/>
 
 # Discord
 * [Discord Sunucumuz](discord.gg/bdfd)
