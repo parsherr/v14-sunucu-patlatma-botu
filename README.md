@@ -28,8 +28,6 @@ Bu projeden yararlandıysanız emeğim adına projeye star atarsanız sevinirim.
 * [Açmak İçin Tıkla](https://discord.com/developers/applications)
 <img src="https://cdn.discordapp.com/attachments/818953120452575322/851116463166849054/3P4KKB.png"/>
 
-***Tadaaa 🎉. Artık v13 kayıt botun hazır. Dilediğin gibi kullanabilirsin.***
-
 # Discord
 * [Discord Sunucumuz](discord.gg/bdfd)
 
