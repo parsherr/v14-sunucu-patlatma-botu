@@ -1,3 +1,5 @@
+// Botta hatalar olabilir tam denemedim discord.gg/bdfd ticket açıp bize bildirebilirsiniz
+
 const { Client, GatewayIntentBits, Partials, PermissionFlagsBits, ChannelType } = require('discord.js');
 const config = require('./config.json');
 
