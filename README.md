@@ -1,6 +1,6 @@
 #  Discord V14 Sunucu patlatma botu
 
-- Botu eğlencesine yaptım yer yerinde "uwu", ":3" gibi şeyler ve anime kızları var OJ-MKPPKOSFGHJOKSFGJKOHJKOPFSGOHKJFGJPSKOHJKOFGSJHGJKSFGJOHIJFSHJOFSG
+- Botu eğlencesine yaptım her yerinde "uwu", ":3" gibi şeyler ve anime kızları var OJ-MKPPKOSFGHJOKSFGJKOHJKOPFSGOHKJFGJPSKOHJKOFGSJHGJKSFGJOHIJFSHJOFSG
 - dediğim gibi eğlenccesine yaptım direk alıp kullanmak yerine trollüne yazdığım yerleri düzenleyin bennce (opsiynel ama şu anki hali çok tatlı oldu JIOSFDGJIHOJSFGH)
 # Içerik : 
 ```js
