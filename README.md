@@ -1,7 +1,7 @@
 #  Discord V14 Sunucu patlatma botu
 
-- Botu eğlencesine yaptım yer yerinde "uwu", ":3" gibi şeyler ve anime kızları var OJ-MKPPKOSFGHJOKSFGJKOHJKOPFSGOHKJFGJPSKOHJKOFGSJHGJKSFGJOHIJFSHJOFSG
-
+- Botu eğlencesine yaptım her yerinde "uwu", ":3" gibi şeyler ve anime kızları var OJ-MKPPKOSFGHJOKSFGJKOHJKOPFSGOHKJFGJPSKOHJKOFGSJHGJKSFGJOHIJFSHJOFSG
+- dediğim gibi eğlenccesine yaptım direk alıp kullanmak yerine trollüne yazdığım yerleri düzenleyin bennce (opsiynel ama şu anki hali çok tatlı oldu JIOSFDGJIHOJSFGH)
 # Içerik : 
 ```js
           { name: '+patlat', value: 'Sunucuyu patlatır.' },
@@ -26,9 +26,6 @@ Bu projeden yararlandıysanız emeğim adına projeye star atarsanız sevinirim.
 
 ## Botun İntentlerini Açmayı Unutma!
 * [Açmak İçin Tıkla](https://discord.com/developers/applications)
-<img src="https://cdn.discordapp.com/attachments/818953120452575322/851116463166849054/3P4KKB.png"/>
-
-***Tadaaa 🎉. Artık v13 kayıt botun hazır. Dilediğin gibi kullanabilirsin.***
 
 # Discord
 * [Discord Sunucumuz](discord.gg/bdfd)
