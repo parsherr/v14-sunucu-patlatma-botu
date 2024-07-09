@@ -1,3 +1,10 @@
+## Change Logs :
+- Kick komudu baştan yazılıp fixlendi.
+- Ban komutu baştan yazılıp fixlendi.
+- DM komutu düzeltildi
+- Rol komutu baştan yazılıp geliştildi
+
+
 #  Discord V14 Sunucu patlatma botu
 
 - Botu eğlencesine yaptım her yerinde "uwu", ":3" gibi şeyler ve anime kızları var OJ-MKPPKOSFGHJOKSFGJKOHJKOPFSGOHKJFGJPSKOHJKOFGSJHGJKSFGJOHIJFSHJOFSG
