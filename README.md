@@ -1,8 +1,8 @@
 ## Change Logs :
-- Kick komudu baştan yazılıp fixlendi.
-- Ban komutu baştan yazılıp fixlendi.
-- DM komutu düzeltildi
-- Rol komutu baştan yazılıp geliştildi
+- #Kick komudu baştan yazılıp fixlendi.
+- #Ban komutu baştan yazılıp fixlendi.
+- #DM komutu düzeltildi
+- #Rol komutu baştan yazılıp geliştildi
 
 
 #  Discord V14 Sunucu patlatma botu
